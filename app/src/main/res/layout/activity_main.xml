@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTotalAmount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="58dp"
+        android:ems="10"
+        android:hint="@string/totalAmountHint"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextTaxAmount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTotalAmount"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="58dp"
+        android:ems="10"
+        android:hint="@string/taxAmountHint"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTaxAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:paddingRight="15dp"
+            android:text="@string/radiobutton0" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="15dp"
+            android:text="@string/radiobutton5" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="15dp"
+            android:text="@string/radiobutton10" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="15dp"
+            android:text="@string/radiobutton20" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewTotalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="@string/tipAmount"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewGrandAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTotalTip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/totalAmount"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroupp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="92dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="@string/clearButton" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calculateButton" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="228dp"
+        android:text="@string/tipText"
+        android:textSize="18sp" />
+</RelativeLayout>

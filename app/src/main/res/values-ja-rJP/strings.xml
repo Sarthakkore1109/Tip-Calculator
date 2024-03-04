@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="radiobutton0">0 %</string>
+    <string name="radiobutton5">5 %</string>
+    <string name="radiobutton10">10 %</string>
+    <string name="radiobutton20">20 %</string>
+    <string name="calculateButton">計算する</string>
+    <string name="tipAmount">チップ額 : ¥0.0</string>
+    <string name="tipAmountResult">"チップ額 : ¥"</string>
+    <string name="totalAmount">" 総量 : ¥0.0"</string>
+    <string name="totalAmountResult">" 総量 : ¥"</string>
+    <string name="tipText">" チップの割合を選択してください"</string>
+    <string name="clearButton">" クリア"</string>
+    <string name="totalAmountHint">ここに合計金額を入力してください</string>
+    <string name="taxAmountHint">" ここに税額を入力してください"</string>
+</resources>
